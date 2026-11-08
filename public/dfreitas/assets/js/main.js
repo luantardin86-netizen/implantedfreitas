@@ -75,10 +75,9 @@
     cur = i; cap.classList.add('is-out');
     setTimeout(() => { if (cur !== i) return; cap.classList.remove('is-out'); cap.innerHTML = render(i); }, 250);
   };
-  if (hv && cap) {
+  if (hv) {
     hv.addEventListener('timeupdate', () => {
-      const t = hv.currentTime, i = CAPS.findIndex(c => t >= c[0] && t < c[1]);
-      if (i !== cur) show(i);
+      const t = hv.currentTime;
       if (hv.duration) prog.style.transform = `scaleX(${t / hv.duration})`;
     });
     const p = hv.play && hv.play(); if (p && p.catch) p.catch(() => {});
@@ -108,12 +107,6 @@
 
   // Pointer effects (desktop only)
   if (matchMedia('(hover: hover) and (pointer: fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const c = $('.cursor');
-    addEventListener('mousemove', e => { c.style.transform = `translate(${e.clientX}px,${e.clientY}px)`; });
-    $$('a,button,[data-reel]').forEach(el => {
-      el.addEventListener('mouseenter', () => c.classList.add('is-hover'));
-      el.addEventListener('mouseleave', () => c.classList.remove('is-hover'));
-    });
     $$('.magnetic').forEach(el => {
       el.addEventListener('mousemove', e => { const b = el.getBoundingClientRect(); el.style.transform = `translate(${(e.clientX - b.left - b.width / 2) * .2}px,${(e.clientY - b.top - b.height / 2) * .3}px)`; });
       el.addEventListener('mouseleave', () => el.style.transform = '');
