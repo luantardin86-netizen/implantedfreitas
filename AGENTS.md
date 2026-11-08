@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- The live site is a static HTML/CSS/JS bundle in `public/dfreitas/` (imported from the GitHub repo), shown full-screen by an iframe on `/`; edit that bundle directly and keep its asset paths prefixed with `/dfreitas/` so they resolve from the public folder.
