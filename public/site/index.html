@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Studio D.Freitas — Prótese Capilar e Barbearia</title>
+  <meta name="description" content="Studio D.Freitas: prótese capilar com naturalidade absoluta, cuidado e respeito. Devolvemos a sua autoestima. Agende pelo WhatsApp." />
+  <meta name="theme-color" content="#0b0a09" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Studio D.Freitas — Prótese Capilar" />
+  <meta property="og:description" content="Mais que cabelo: autoestima de volta. Agende sua avaliação pelo WhatsApp." />
+  <meta property="og:image" content="/assets/img/og.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="video" href="/assets/video/depoimento-pai.mp4" type="video/mp4" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <!-- Intro / loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <svg viewBox="0 0 120 120" class="loader__ring"><circle cx="60" cy="60" r="54" /></svg>
+      <span class="loader__d">D</span>
+    </div>
+    <p class="loader__word"><span>Studio</span> <strong>D.Freitas</strong></p>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <!-- Navigation -->
+  <header class="nav" data-nav>
+    <a href="#inicio" class="brand" aria-label="Studio D.Freitas — início">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><use href="#mono" /></svg>
+      </span>
+      <span class="brand__text"><small>Studio</small><b>D.Freitas</b></span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#sobre">Sobre nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#resultados">Prova social</a>
+      <a href="#local">Onde estamos</a>
+    </nav>
+    <a class="btn btn--gold btn--sm nav__cta" data-wa="Olá! Vim pelo site e gostaria de agendar uma avaliação." href="#" target="_blank" rel="noopener">
+      <svg class="ico"><use href="#i-wa" /></svg><span>Agendar</span>
+    </a>
+    <button class="nav__burger" aria-label="Abrir menu" aria-expanded="false" data-burger><span></span><span></span></button>
+  </header>
+
+  <div class="menu" data-menu aria-hidden="true">
+    <nav aria-label="Menu mobile">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#resultados">Prova social</a>
+      <a href="#local">Onde estamos</a>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--gold" data-wa="Olá! Vim pelo site e gostaria de agendar uma avaliação." href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa" /></svg><span>Falar no WhatsApp</span></a>
+      <a class="menu__ig" href="https://www.instagram.com/studio_d.freitas/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-ig" /></svg>@studio_d.freitas</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <video class="hero__bg" src="/assets/video/hero-bg.mp4" autoplay muted loop playsinline aria-hidden="true" tabindex="-1"></video>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal-hero"><span class="line"></span>Prótese capilar · Barbearia</p>
+          <h1 class="hero__title">
+            <span class="split-line"><span>Mais que</span></span>
+            <span class="split-line"><span><em>cabelo.</em></span></span>
+            <span class="split-line"><span>Você de volta.</span></span>
+          </h1>
+
+          <!-- Fluid subtitles synced to the hero video -->
+          <div class="captions" aria-live="off">
+            <p class="captions__label"><span class="dot"></span> Depoimento real · ao vivo</p>
+            <p class="captions__text" data-captions></p>
+          </div>
+
+          <div class="hero__actions reveal-hero">
+            <a class="btn btn--gold magnetic" data-wa="Olá! Vi o site do Studio D.Freitas e quero agendar minha avaliação de prótese capilar." href="#" target="_blank" rel="noopener">
+              <svg class="ico"><use href="#i-wa" /></svg><span>Agendar avaliação</span>
+            </a>
+            <a class="btn btn--ghost magnetic" href="#resultados"><span>Ver resultados</span><svg class="ico"><use href="#i-arrow" /></svg></a>
+          </div>
+        </div>
+
+        <figure class="hero__film reveal-hero">
+          <div class="film">
+            <video class="film__video" data-hero-video src="/assets/video/depoimento-pai.mp4" poster="/assets/img/depoimento-pai-poster.jpg" autoplay muted loop playsinline preload="auto"></video>
+            <div class="film__progress"><span data-hero-progress></span></div>
+            <button class="film__sound" data-hero-sound aria-label="Ativar som">
+              <svg class="ico ico--off"><use href="#i-mute" /></svg>
+              <svg class="ico ico--on"><use href="#i-sound" /></svg>
+              <span data-sound-label>Ativar som</span>
+            </button>
+          </div>
+          <figcaption class="film__cap">“Vai de cabelo! Totalmente diferente.”</figcaption>
+          <span class="film__ring" aria-hidden="true"></span>
+        </figure>
+      </div>
+
+      <a href="#manifesto" class="scroll-hint" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Prótese capilar</span><i>✦</i><span>Naturalidade</span><i>✦</i><span>Autoestima</span><i>✦</i><span>Respeito</span><i>✦</i><span>Cuidado</span><i>✦</i><span>Barbearia</span><i>✦</i>
+        <span>Prótese capilar</span><i>✦</i><span>Naturalidade</span><i>✦</i><span>Autoestima</span><i>✦</i><span>Respeito</span><i>✦</i><span>Cuidado</span><i>✦</i><span>Barbearia</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- SOBRE NÓS / MANIFESTO -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="line"></span>Sobre nós</p>
+          <h2 class="title reveal">Trabalhar também <em>é servir.</em></h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__badge reveal" data-tilt>
+            <img src="/assets/img/logo-badge.webp" alt="Logo Studio D.Freitas — Prótese Capilar" width="900" height="900" loading="lazy" />
+            <span class="about__glow" aria-hidden="true"></span>
+          </div>
+
+          <div class="manifesto" id="manifesto">
+            <p class="manifesto__quote" data-words>Que o nosso trabalho seja uma bênção na vida de todos que cruzarem o nosso caminho. Que cada pessoa atendida por nós leve consigo mais do que um produto ou serviço:</p>
+            <p class="manifesto__sub reveal">leve <b>respeito</b>, <b>cuidado</b> e a certeza de que foi <b>valorizada</b>. Porque esse é o legado de quem entende que trabalhar também é servir.</p>
+            <p class="manifesto__sign reveal">— Studio D.Freitas</p>
+          </div>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar reveal" data-tilt>
+            <span class="pillar__num">01</span>
+            <h3>Missão</h3>
+            <p>Ser uma bênção na vida de cada pessoa que cruza o nosso caminho — devolvendo autoestima com técnica, verdade e um atendimento que acolhe.</p>
+          </article>
+          <article class="pillar reveal" data-tilt>
+            <span class="pillar__num">02</span>
+            <h3>Visão</h3>
+            <p>Ser referência em prótese capilar, reconhecida não só pela naturalidade do resultado, mas pelo legado de servir com excelência.</p>
+          </article>
+          <article class="pillar reveal" data-tilt>
+            <span class="pillar__num">03</span>
+            <h3>Valores</h3>
+            <ul class="values">
+              <li>Respeito</li><li>Cuidado</li><li>Valorização</li><li>Fé</li><li>Servir</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal"><span class="line"></span>O que fazemos</p>
+            <h2 class="title reveal">Naturalidade que <em>ninguém percebe.</em></h2>
+          </div>
+          <p class="lead reveal">Cada prótese é pensada para você: cor, densidade, direção dos fios e linha frontal. O resultado é um cabelo que conversa com o seu rosto — e com a sua história.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__ico"><svg><use href="#i-hair" /></svg></div>
+            <h3>Prótese capilar</h3>
+            <p>Aplicação sob medida, com emenda invisível entre o cabelo natural e a prótese.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ico"><svg><use href="#i-sparkle" /></svg></div>
+            <h3>Manutenção</h3>
+            <p>Higienização, reaplicação e cuidado contínuo para manter o resultado impecável.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ico"><svg><use href="#i-comb" /></svg></div>
+            <h3>Corte &amp; acabamento</h3>
+            <p>Corte personalizado que integra a prótese ao seu estilo, do clássico ao degradê.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ico"><svg><use href="#i-beard" /></svg></div>
+            <h3>Barbearia</h3>
+            <p>Barba e cuidados masculinos com o mesmo padrão de atenção aos detalhes.</p>
+          </article>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal"><span>1</span><div><h4>Avaliação</h4><p>Conversa sem compromisso para entender o seu caso e o seu objetivo.</p></div></li>
+          <li class="step reveal"><span>2</span><div><h4>Personalização</h4><p>Escolha de cor, textura e densidade para um resultado natural.</p></div></li>
+          <li class="step reveal"><span>3</span><div><h4>Aplicação</h4><p>Fixação e corte integrados. Você sai daqui pronto para viver.</p></div></li>
+          <li class="step reveal"><span>4</span><div><h4>Acompanhamento</h4><p>Manutenções periódicas para durar e continuar perfeito.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROVA SOCIAL -->
+    <section class="proof" id="resultados">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow reveal"><span class="line"></span>Prova social<span class="line"></span></p>
+          <h2 class="title reveal">Histórias que <em>falam por nós.</em></h2>
+          <p class="lead reveal">Clientes reais, emoções reais. Toque em um vídeo para assistir com som.</p>
+        </div>
+
+        <div class="reels">
+          <article class="reel reveal" data-reel>
+            <div class="reel__media">
+              <video src="/assets/video/depoimento-pai.mp4" poster="/assets/img/depoimento-pai-poster.jpg" playsinline preload="metadata" loop></video>
+              <button class="reel__play" aria-label="Assistir depoimento: 90 anos do pai"><svg><use href="#i-play" /></svg></button>
+              <div class="reel__bar"><span></span></div>
+            </div>
+            <div class="reel__body">
+              <p class="reel__quote">“Eu não fui por causa de vergonha. Agora, da próxima, vai de cabelo!”</p>
+              <p class="reel__tag">Os 90 anos do pai</p>
+            </div>
+          </article>
+
+          <article class="reel reveal" data-reel>
+            <div class="reel__media">
+              <video src="/assets/video/depoimento-casamento.mp4" poster="/assets/img/depoimento-casamento-poster.jpg" playsinline preload="metadata" loop></video>
+              <button class="reel__play" aria-label="Assistir depoimento: o casamento"><svg><use href="#i-play" /></svg></button>
+              <div class="reel__bar"><span></span></div>
+            </div>
+            <div class="reel__body">
+              <p class="reel__quote">“Tentando esconder de todas as formas… dia vinte e sete, vou casar.”</p>
+              <p class="reel__tag">Pronto para o casamento</p>
+            </div>
+          </article>
+
+          <article class="reel reveal" data-reel>
+            <div class="reel__media">
+              <video src="/assets/video/transformacao.mp4" poster="/assets/img/transformacao-poster.jpg" playsinline preload="metadata" loop></video>
+              <button class="reel__play" aria-label="Assistir: a transformação"><svg><use href="#i-play" /></svg></button>
+              <div class="reel__bar"><span></span></div>
+            </div>
+            <div class="reel__body">
+              <p class="reel__quote">“Tá tão bem conectado que nem a gente tá encontrando a emenda.”</p>
+              <p class="reel__tag">A transformação</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="stats">
+          <div class="stat reveal"><b data-count="100" data-suffix="%">0</b><span>Personalizado para cada cliente</span></div>
+          <div class="stat reveal"><b data-count="0">0</b><span>Emendas aparentes</span></div>
+          <div class="stat reveal"><b data-count="1" data-suffix="º">0</b><span>Passo: uma conversa no WhatsApp</span></div>
+        </div>
+
+        <div class="center reveal">
+          <a class="btn btn--ghost magnetic" href="https://www.instagram.com/studio_d.freitas/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-ig" /></svg><span>Mais resultados no Instagram</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCAL -->
+    <section class="local" id="local">
+      <div class="container local__grid">
+        <div class="local__copy">
+          <p class="eyebrow reveal"><span class="line"></span>Onde estamos</p>
+          <h2 class="title reveal">Venha tomar um <em>café com a gente.</em></h2>
+          <p class="lead reveal">Um espaço reservado e acolhedor, pensado para você se sentir à vontade desde a primeira conversa. Atendimento com hora marcada.</p>
+          <div class="local__actions reveal">
+            <a class="btn btn--gold magnetic" href="https://ul.waze.com/ul?ll=-15.63712800%2C-47.76119500&amp;navigate=yes&amp;utm_campaign=live_map&amp;utm_source=waze_website&amp;utm_medium=lm_share_location" target="_blank" rel="noopener"><svg class="ico"><use href="#i-waze" /></svg><span>Ir com Waze</span></a>
+            <a class="btn btn--ghost magnetic" href="https://www.google.com/maps/dir/?api=1&amp;destination=-15.637128,-47.761195" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin" /></svg><span>Google Maps</span></a>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe title="Localização do Studio D.Freitas" src="https://maps.google.com/maps?q=-15.637128,-47.761195&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <span class="map__pin" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#mono" /></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <p class="eyebrow reveal"><span class="line"></span>O primeiro passo é seu<span class="line"></span></p>
+        <h2 class="cta__title reveal">Pronto para se olhar no espelho <em>e se reconhecer?</em></h2>
+        <a class="btn btn--gold btn--lg magnetic reveal" data-wa="Olá! Quero dar o primeiro passo e agendar minha avaliação no Studio D.Freitas." href="#" target="_blank" rel="noopener">
+          <svg class="ico"><use href="#i-wa" /></svg><span>Chamar no WhatsApp</span>
+        </a>
+        <p class="cta__note reveal">Resposta rápida · Avaliação sem compromisso · Sigilo total</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="brand" aria-label="Voltar ao início">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#mono" /></svg></span>
+        <span class="brand__text"><small>Studio</small><b>D.Freitas</b></span>
+      </a>
+      <div class="footer__links">
+        <a data-wa="Olá! Vim pelo site do Studio D.Freitas." href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa" /></svg>(61) 98260-2730</a>
+        <a href="https://www.instagram.com/studio_d.freitas/" target="_blank" rel="noopener"><svg class="ico"><use href="#i-ig" /></svg>@studio_d.freitas</a>
+        <a href="https://ul.waze.com/ul?ll=-15.63712800%2C-47.76119500&amp;navigate=yes" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin" /></svg>Como chegar</a>
+      </div>
+      <p class="footer__copy">© <span data-year></span> Studio D.Freitas · Prótese Capilar. Trabalhar também é servir.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" data-wa="Olá! Vim pelo site e gostaria de mais informações." href="#" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg><use href="#i-wa" /></svg>
+    <span class="wa-float__tip">Fale com a gente</span>
+  </a>
+
+  <!-- SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f7e6a8" />
+        <stop offset=".45" stop-color="#d4a24c" />
+        <stop offset="1" stop-color="#8a5a1c" />
+      </linearGradient>
+    <symbol id="mono" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="29" fill="none" stroke="url(#gold)" stroke-width="2" />
+      <circle cx="32" cy="32" r="25" fill="none" stroke="url(#gold)" stroke-width=".8" stroke-dasharray="1.5 2.5" />
+      <path d="M21 17h9.6c9 0 15.2 5.9 15.2 15s-6.2 15-15.2 15H21zm6.2 5.6v18.8h3.2c5.4 0 9-3.7 9-9.4s-3.6-9.4-9-9.4z" fill="url(#gold)" />
+      <circle cx="47.2" cy="44.2" r="2.6" fill="url(#gold)" />
+    </symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.23 3.7 8.23 8.24 0 4.54-3.69 8.24-8.23 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.81-.78.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7.5 2.75h9a4.75 4.75 0 0 1 4.75 4.75v9a4.75 4.75 0 0 1-4.75 4.75h-9A4.75 4.75 0 0 1 2.75 16.5v-9A4.75 4.75 0 0 1 7.5 2.75Z"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a.8.8 0 0 0 1.2.7l10.4-6.5a.8.8 0 0 0 0-1.4L9.2 4.8A.8.8 0 0 0 8 5.5Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path fill="currentColor" d="M7 5h3.5v14H7zm6.5 0H17v14h-3.5z"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M11 5 6 9H3v6h3l5 4V5Zm11 4-6 6m0-6 6 6"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M11 5 6 9H3v6h3l5 4V5Zm4.5 3.5a5 5 0 0 1 0 7m2.8-10a9 9 0 0 1 0 13"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-waze" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M6.2 17.6C4 16.4 2.6 14.5 2.6 12.4 2.6 7.6 6.8 3.8 12 3.8s9.4 3.8 9.4 8.4c0 4.7-4.2 7.4-9.4 7.4h-1.6M6.2 17.6a2 2 0 1 0 4 .4"/><circle cx="9" cy="10.5" r=".9" fill="currentColor"/><circle cx="15" cy="10.5" r=".9" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M9 14c1.6 1.4 4.4 1.4 6 0"/></symbol>
+    <symbol id="i-hair" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M7 18c0-6.6 4-11 9-11s9 4.4 9 11M7 18c2-4 5-6 9-6s7 2 9 6M10 12c1.5 2 3.5 3 6 3m-3-7c.5 3 2 5 5 6m3-4c-.3 2-1 3.5-2.5 4.5"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M9 22c1.8 2.6 4.3 4 7 4s5.2-1.4 7-4"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M16 4c.8 5.6 2.4 7.2 8 8-5.6.8-7.2 2.4-8 8-.8-5.6-2.4-7.2-8-8 5.6-.8 7.2-2.4 8-8Zm8.5 14c.4 2.6 1.1 3.3 3.5 3.5-2.4.3-3.1 1-3.5 3.5-.3-2.5-1-3.2-3.5-3.5 2.5-.2 3.2-.9 3.5-3.5Z"/></symbol>
+    <symbol id="i-comb" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M4 12h24v4H4z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M6 16v8m3-8v8m3-8v8m3-8v8m3-8v8m3-8v8m3-8v8m3-8v5"/></symbol>
+    <symbol id="i-beard" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M7 10v6c0 6 4 11 9 11s9-5 9-11v-6M7 16c2 1 3 2 4 4m14-4c-2 1-3 2-4 4m-9 1c1.2-1.2 2.5-1.8 4-1.8s2.8.6 4 1.8"/></symbol>
+  </defs>
+  </svg>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
